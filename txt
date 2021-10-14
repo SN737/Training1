@@ -10,3 +10,31 @@ k = n%2
 
 print(n // 2 + k)
 print(k)
+
+
+
+n1, n2, n3 = int(input()), int(input()), int(input())
+age = 22
+if (n3 - n2) == (n2 - n1):
+    print('YES', age )
+else:
+    print('NO')
+
+    ---------брут форс по нахождению наименьтшего числа-----
+    n1, n2, n3, n4 = int(input()), int(input()), int(input()), int(input())
+
+m1 = n1 + n2
+m2 = n3 + n4
+
+if m1 <= m2 and n1 <= n2 and n1 <= n4 and n1 <= n3:
+     print(n1)
+
+elif  m1 <= m2 and n1 > n2 and n2 < n4 and n2 <= n3:
+     print(n2)
+
+elif m1 >= m2 and n3 < n4:
+     print(n3)
+elif m1 < m2 and n3 < n4:
+     print(n3)
+
+else: print (n4)
